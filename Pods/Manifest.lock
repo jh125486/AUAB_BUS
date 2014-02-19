@@ -1,0 +1,13 @@
+PODS:
+  - ConciseKit (0.1.2)
+  - QuickDialog (0.9.1)
+
+DEPENDENCIES:
+  - ConciseKit
+  - QuickDialog
+
+SPEC CHECKSUMS:
+  ConciseKit: 1e086a66d098ba160ca5faa86458a0431b280b30
+  QuickDialog: fa9f2641b1c2028667e115add0005530c77193a3
+
+COCOAPODS: 0.29.0
