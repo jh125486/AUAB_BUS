@@ -21,6 +21,10 @@
 		1607DD46189E7F7600388AC1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1607DD28189E7F7600388AC1 /* UIKit.framework */; };
 		1607DD4E189E7F7600388AC1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1607DD4C189E7F7600388AC1 /* InfoPlist.strings */; };
 		1607DD50189E7F7600388AC1 /* StraightBussingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1607DD4F189E7F7600388AC1 /* StraightBussingTests.m */; };
+		1692D76318B255CC00F28844 /* JH_Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1692D76218B255CC00F28844 /* JH_Constants.m */; };
+		16FFA50A189F4D5200DA7A21 /* 379_routes.json in Resources */ = {isa = PBXBuildFile; fileRef = 16FFA508189F4D5200DA7A21 /* 379_routes.json */; };
+		16FFA50B189F4D5200DA7A21 /* 379_stops.json in Resources */ = {isa = PBXBuildFile; fileRef = 16FFA509189F4D5200DA7A21 /* 379_stops.json */; };
+		A607A63D408A4D34A37F6EF1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D2FBD8D48F4351AE7FE325 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,12 @@
 		1607DD4B189E7F7600388AC1 /* StraightBussingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StraightBussingTests-Info.plist"; sourceTree = "<group>"; };
 		1607DD4D189E7F7600388AC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1607DD4F189E7F7600388AC1 /* StraightBussingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StraightBussingTests.m; sourceTree = "<group>"; };
+		1692D76118B255CC00F28844 /* JH_Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JH_Constants.h; sourceTree = "<group>"; };
+		1692D76218B255CC00F28844 /* JH_Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JH_Constants.m; sourceTree = "<group>"; };
+		16FFA508189F4D5200DA7A21 /* 379_routes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 379_routes.json; sourceTree = "<group>"; };
+		16FFA509189F4D5200DA7A21 /* 379_stops.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 379_stops.json; sourceTree = "<group>"; };
+		36D2FBD8D48F4351AE7FE325 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4638354E62FC4FF090EDEAA6 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,7 @@
 				1607DD27189E7F7600388AC1 /* CoreGraphics.framework in Frameworks */,
 				1607DD29189E7F7600388AC1 /* UIKit.framework in Frameworks */,
 				1607DD25189E7F7600388AC1 /* Foundation.framework in Frameworks */,
+				A607A63D408A4D34A37F6EF1 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +97,7 @@
 				1607DD49189E7F7600388AC1 /* StraightBussingTests */,
 				1607DD23189E7F7600388AC1 /* Frameworks */,
 				1607DD22189E7F7600388AC1 /* Products */,
+				4638354E62FC4FF090EDEAA6 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +117,7 @@
 				1607DD26189E7F7600388AC1 /* CoreGraphics.framework */,
 				1607DD28189E7F7600388AC1 /* UIKit.framework */,
 				1607DD43189E7F7600388AC1 /* XCTest.framework */,
+				36D2FBD8D48F4351AE7FE325 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,6 +130,8 @@
 				1607DD36189E7F7600388AC1 /* Main.storyboard */,
 				1607DD39189E7F7600388AC1 /* JHViewController.h */,
 				1607DD3A189E7F7600388AC1 /* JHViewController.m */,
+				1692D76118B255CC00F28844 /* JH_Constants.h */,
+				1692D76218B255CC00F28844 /* JH_Constants.m */,
 				1607DD3C189E7F7600388AC1 /* Images.xcassets */,
 				1607DD2B189E7F7600388AC1 /* Supporting Files */,
 			);
@@ -126,6 +141,8 @@
 		1607DD2B189E7F7600388AC1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				16FFA508189F4D5200DA7A21 /* 379_routes.json */,
+				16FFA509189F4D5200DA7A21 /* 379_stops.json */,
 				1607DD2C189E7F7600388AC1 /* StraightBussing-Info.plist */,
 				1607DD2D189E7F7600388AC1 /* InfoPlist.strings */,
 				1607DD30189E7F7600388AC1 /* main.m */,
@@ -159,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1607DD53189E7F7600388AC1 /* Build configuration list for PBXNativeTarget "StraightBussing" */;
 			buildPhases = (
+				1CB97C7922FB46BE80D90806 /* Check Pods Manifest.lock */,
 				1607DD1D189E7F7600388AC1 /* Sources */,
 				1607DD1E189E7F7600388AC1 /* Frameworks */,
 				1607DD1F189E7F7600388AC1 /* Resources */,
+				20DB9323FF5B4006B7BCE47E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,6 +219,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Jacob Hochstetler";
 				TargetAttributes = {
+					1607DD20189E7F7600388AC1 = {
+						DevelopmentTeam = 4TGD3AND8F;
+					};
 					1607DD41189E7F7600388AC1 = {
 						TestTargetID = 1607DD20189E7F7600388AC1;
 					};
@@ -230,8 +252,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1607DD3D189E7F7600388AC1 /* Images.xcassets in Resources */,
+				16FFA50B189F4D5200DA7A21 /* 379_stops.json in Resources */,
 				1607DD2F189E7F7600388AC1 /* InfoPlist.strings in Resources */,
 				1607DD38189E7F7600388AC1 /* Main.storyboard in Resources */,
+				16FFA50A189F4D5200DA7A21 /* 379_routes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +269,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1CB97C7922FB46BE80D90806 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		20DB9323FF5B4006B7BCE47E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1607DD1D189E7F7600388AC1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -253,6 +310,7 @@
 				1607DD35189E7F7600388AC1 /* JHAppDelegate.m in Sources */,
 				1607DD3B189E7F7600388AC1 /* JHViewController.m in Sources */,
 				1607DD31189E7F7600388AC1 /* main.m in Sources */,
+				1692D76318B255CC00F28844 /* JH_Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,7 +393,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -368,7 +426,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -376,26 +434,36 @@
 		};
 		1607DD54189E7F7600388AC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4638354E62FC4FF090EDEAA6 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StraightBussing/StraightBussing-Prefix.pch";
 				INFOPLIST_FILE = "StraightBussing/StraightBussing-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		1607DD55189E7F7600388AC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4638354E62FC4FF090EDEAA6 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StraightBussing/StraightBussing-Prefix.pch";
 				INFOPLIST_FILE = "StraightBussing/StraightBussing-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -461,6 +529,7 @@
 				1607DD55189E7F7600388AC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1607DD56189E7F7600388AC1 /* Build configuration list for PBXNativeTarget "StraightBussingTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +538,7 @@
 				1607DD58189E7F7600388AC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

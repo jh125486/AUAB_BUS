@@ -7,6 +7,7 @@
 //
 
 #import "JHAppDelegate.h"
+#import "JHViewController.h"
 
 @implementation JHAppDelegate
 
@@ -36,6 +37,9 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    // set time for fromTime
+    [[NSNotificationCenter defaultCenter] postNotificationName:NOTIF_UpdateCurrentTime
+                                                        object:nil];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
