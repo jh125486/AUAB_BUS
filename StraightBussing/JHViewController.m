@@ -48,8 +48,8 @@
     
     QSection *resultSection = [[QSection alloc] initWithTitle:@"Bus"];
     QLabelElement *busColor = [[QLabelElement alloc] initWithTitle:@"Line color" Value:nil];
-    QLabelElement *busWait = [[QLabelElement alloc] initWithTitle:@"Wait time" Value:nil];
-    QLabelElement *busRide = [[QLabelElement alloc] initWithTitle:@"Ride time" Value:nil];
+    QLabelElement *busWait = [[QLabelElement alloc] initWithTitle:@"Bus comes in" Value:nil];
+    QLabelElement *busRide = [[QLabelElement alloc] initWithTitle:@"Ride time on the bus" Value:nil];
     _busColorLabel = busColor;
     _busRideLabel = busRide;
     _busWaitLabel = busWait;
@@ -158,8 +158,8 @@
         NSInteger waitTimeMinutes = [[onStop $for:@"t"] unsignedIntegerValue] - timeDelta;
         NSInteger rideTimeMinutes = [[offStop $for:@"t"] unsignedIntegerValue] - [[onStop $for:@"t"] unsignedIntegerValue];
         _busColorLabel.value = chosenRouteColor;
-        _busWaitLabel.value = $str(@"in about %ld mikes",  (long)waitTimeMinutes);
-        _busRideLabel.value = $str(@"for about %ld mikes", (long)rideTimeMinutes);
+        _busWaitLabel.value = $str(@"about %ld mikes",  (long)waitTimeMinutes);
+        _busRideLabel.value = $str(@"about %ld mikes", (long)rideTimeMinutes);
     } else {
         _busColorLabel.value = @"...no route found";
         _busWaitLabel.value = nil;

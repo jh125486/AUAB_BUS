@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FCE5B6B9A8C64778ACBDBB76"
+               BlueprintIdentifier = "CC8BA2F071334F3588997460"
                BuildableName = "libPods-QuickDialog.a"
                BlueprintName = "Pods-QuickDialog"
                ReferencedContainer = "container:Pods.xcodeproj">
